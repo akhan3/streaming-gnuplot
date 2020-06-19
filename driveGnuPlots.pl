@@ -81,7 +81,7 @@ sub main {
 	push @gnuplots, *PIPE;
 	print PIPE "set xtics\n";
 	print PIPE "set ytics\n";
-	print PIPE "set style data linespoints\n";
+	#~ print PIPE "set style data filledcurves\n";
 	print PIPE "unset grid\n";
 	if ($numberOfStreams == 1) {
 	    print PIPE "set terminal $terminal title '".$titles[0]."' noraise\n";
@@ -108,11 +108,7 @@ sub main {
 	push @{$buf}, $parts[1];
 	#print "stream $streamIdx: ";
 	print $pip "set xrange [".($xcounter-$sampleSizes[$streamIdx]).":".($xcounter+1)."]\n";
-	if ($numberOfStreams == 1) {
-	    print $pip "plot \"-\"\n";
-	} else {
-	    print $pip "plot \"-\" title '$title'\n";
-	}
+	print $pip "plot \"-\" with filledcurve y1=0 title '$title\n";
 	my $cnt = 0;
 	for my $elem (reverse @{$buf}) {
 	    #print " ".$elem;
