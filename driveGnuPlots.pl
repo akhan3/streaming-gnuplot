@@ -11,8 +11,8 @@ where options are (in order):
   Stream1_Title <Stream2_Title> ...       Title used for each stream
   (Optional) Stream1_geometry <Stream2_geometry>...  X and Y position in pixels from the top left
 
-The last parameters (the optionally provided geometries of the gnuplot windows) 
-are of the form: 
+The last parameters (the optionally provided geometries of the gnuplot windows)
+are of the form:
   WIDTHxHEIGHT+XOFF+YOFF
 OEF
     exit(1);
@@ -59,7 +59,7 @@ sub main {
     }
     close GNUPLOT_TERM;
 
-    # unfortunately, the wxt terminal type does not support positioning. 
+    # unfortunately, the wxt terminal type does not support positioning.
     # hardcode it...
     $terminal  = "x11";
 
