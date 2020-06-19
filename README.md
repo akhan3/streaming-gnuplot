@@ -12,7 +12,7 @@ $ ./sine_cosine.pl | ./driveGnuPlots.pl 2 50 500 "Sine" "Cosine"
 $ ./sine.pl | ./driveGnuPlots.pl 1 50 "Sine"
 ```
 
-<a href="https://asciinema.org/a/341114"><img src="https://asciinema.org/a/341114.png" width="500px"/></a>
+<a href="https://asciinema.org/a/341114"><img src="assets/demo_sine.gif" width="500px"/></a>
 
 
 ## CPU utilization
@@ -23,7 +23,8 @@ $ vmstat 1 | stdbuf -oL awk '{print "0:" 100-$(NF-2)}' | ./driveGnuPlots.pl 1 60
 
 Please note that `stdbuf` is the key here, without which the pipeline won't work as intended.
 
-<a href="https://asciinema.org/a/341132"><img src="https://asciinema.org/a/341132.png" width="500px"/></a>
+<a href="https://asciinema.org/a/341132"><img src="assets/cpu_util_341132.gif" width="500px"/></a>
+
 
 
 ## Credits
