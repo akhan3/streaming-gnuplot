@@ -10,8 +10,8 @@ select((select(STDOUT), $| = 1)[0]);
 my $offset = 0.0;
 while(1) {
     print "0:".sin($offset)."\n";
-    print "1:".cos($offset)."\n";
-    $offset += 0.1;
+    # print "1:".cos($offset)."\n";
+    $offset += 0.2;
     if ($offset > 500) {
         last;
     }
