@@ -82,7 +82,7 @@ sub main {
 	print PIPE "set xtics\n";
 	print PIPE "set ytics\n";
 	print PIPE "set style data linespoints\n";
-	print PIPE "set grid\n";
+	print PIPE "unset grid\n";
 	if ($numberOfStreams == 1) {
 	    print PIPE "set terminal $terminal title '".$titles[0]."' noraise\n";
 	} else {
