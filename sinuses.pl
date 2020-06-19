@@ -15,5 +15,5 @@ while(1) {
     if ($offset > 500) {
         last;
     }
-    sleep(0.02);
+    sleep(0.1);
 }
