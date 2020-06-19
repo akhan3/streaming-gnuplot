@@ -61,7 +61,7 @@ sub main {
 
     # unfortunately, the wxt terminal type does not support positioning.
     # hardcode it...
-    $terminal  = "x11";
+    $terminal  = "dumb";
 
     my @gnuplots;
     my @buffers;
