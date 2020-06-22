@@ -25,8 +25,9 @@ Please note that `stdbuf` is the key here, without which the pipeline won't work
 
 <a href="https://asciinema.org/a/341132"><img src="assets/cpu_util_341132.gif" width="500px"/></a>
 
-
-
 ## Credits
-- Code adapted from https://www.thanassis.space/gnuplotStreaming.html ([Thanassis Tsiodras](https://github.com/ttsiodras))
+- Code adapted from https://www.thanassis.space/gnuplotStreaming.html ([Thanassis Tsiodras](https://github.com/ttsiodras), Sep 2008)
 
+## TODO
+- https://github.com/dkogan/feedgnuplot
+- https://github.com/dpavlin/cheali-logview-gnuplot/blob/master/driveGnuPlots.pl
