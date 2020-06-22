@@ -28,4 +28,5 @@ Please note that `stdbuf` is the key here, without which the pipeline won't work
 
 
 ## Credits
-Idea and initial code is taken from https://www.thanassis.space/gnuplotStreaming.html
+- Code adapted from https://www.thanassis.space/gnuplotStreaming.html ([Thanassis Tsiodras](https://github.com/ttsiodras))
+
